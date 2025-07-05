@@ -1,0 +1,61 @@
+npm warn Unknown project config "auto-install-peers". This will stop working in the next major version of npm.
+
+> vanguard-web@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.3.5 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://10.255.255.254:3000
+   - Environments: .env
+
+ ✓ Starting...
+ ○ Compiling middleware ...
+ ✓ Compiled middleware in 652ms
+ ✓ Ready in 8.5s
+ ○ Compiling /market-intelligence ...
+ ✓ Compiled /market-intelligence in 8.3s
+ GET /market-intelligence 200 in 9153ms
+ GET /market-intelligence 200 in 226ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 618ms
+ GET /favicon.ico 200 in 1051ms
+ GET /favicon.ico 200 in 386ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2s
+ ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/.next/server/app/page.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/server/require.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/build/swc/options.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/build/swc/index.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/server/config.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/server/next.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/server/lib/start-server.js
+    at Object.<anonymous> (.next/server/app/page.js:2:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1402ms
+ ⨯ Error: Cannot find module '../chunks/ssr/[turbopack]_runtime.js'
+Require stack:
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/.next/server/pages/_document.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/server/require.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/build/swc/options.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/build/swc/index.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/build/next-config-ts/transpile-config.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/server/config.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/server/next.js
+- /mnt/c/Users/riz/Desktop/Vanguard/vanguard-web/node_modules/next/dist/server/lib/start-server.js
+    at Object.<anonymous> (.next/server/pages/_document.js:2:17) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ GET / 500 in 11185ms
+[?25h
